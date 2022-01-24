@@ -17,10 +17,6 @@ ul {
     list-style: none;
 }
 
-hr {
-    opacity: 0.3;
-}
-
 
 /* --------------------------------------------------- Top Header -------------------------------------------------------*/
 
@@ -32,22 +28,15 @@ hr {
     align-items: center;
 }
 
+.links {
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
 .top-header a {
-    margin: 5px;
-    font-size: 14px;
-}
-
-.links a:hover {
-    color: #bdb705;
-}
-
-.top-header p {
-    margin: 0 10px;
-    font-size: 14px;
-}
-
-.mail a:hover {
-    opacity: 0.6;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -55,244 +44,132 @@ hr {
 
 header {
     height: 100px;
-    margin-left: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header img {
-    width: 70px;
+    width: 50px;
     margin: 15px 5px;
 }
 
 header h1 {
-    font-size: 45px;
+    font-size: 30px;
     flex: 1;
     display: flex;
 }
 
 .amarillo {
-    color: #bdb705;
+    color: #93ba36;
 }
+
+
+/*NAVEGACION EN EL HEADER*/
 
 .nav-main {
-    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /*position: absolute; LUEGO PREGUNTAR EN TUTORIAS*/
 }
 
-.nav-main ul li a {
-    padding: 10px;
+.nav-main ul {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-main ul li {
     padding-bottom: 1px;
+    margin-top: 10px;
 }
 
-.nav-main ul li a:hover {
+.nav-main ul li button {
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.nav-main ul li button:hover {
     border-bottom: 2px solid #000;
 }
 
 .nav-main .subs {
-    background: #c99605;
+    background: #ffb103;
     padding: 10px;
     border-radius: 5px;
 }
 
 
-/*------------------------------------------------------ BARRA DE NAVEGACION --------------------------------------------*/
+/*BOTON MENU*/
 
+#btn-menu {
+    margin-right: 7px;
+    background: #ffb103;
+    padding: 5px;
+    border-radius: 5px;
+}
 
-/*NAVEGACION ENTRE ENERGIAS*/
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    margin-right: auto;
-    margin-top: 0px auto;
-    padding: 4px;
+#btn-menu:hover {
+    border-bottom: 2px solid #000;
 }
 
 
-/*NAVEGACION POR ANCOR*/
+/*CLASE OCULTAR QUE SE SUPERPONE CON EL FLEX POR CASCADA*/
 
-.nav a {
-    text-decoration: none;
-    text-align: center center;
-    color: #000;
+.ocultar {
+    display: none;
 }
 
 
-/*MOUSE ARRIBA - CAMBIO DE COLOR*/
+/*----------------------------------------------TITULO PRINCIPAL------------------------------------------------*/
 
-.site-header a:hover {
-    opacity: 0.5;
-}
-
-.site-header .contact {
-    color: blue;
-}
-
-
-/* ------------------------------------------------------------------ Form --------------------------------------------------*/
-
-
-/*FONDO CONSULTAS*/
-
-.cont-form {
-    height: 503px;
-    background: url(../img/fondo-consultas.jpg) no-repeat center center/cover;
-    padding: 50px;
-    display: flex;
-}
-
-.form {
-    width: 400px;
-    font-size: 'Calibri';
-    color: #000;
-}
-
-.form h4 {
-    font-size: 23px;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255)
-}
-
-.controlador {
+.titulo-principal {
     width: 100%;
-    background: #294974;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 5px;
-    border: 1px solid #000;
-    font-family: 'Calibri';
-    font-size: 14px;
-    color: white;
-}
-
-.mensaje {
-    width: 100%;
-    height: 170px;
-    background: #294974;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    font-family: 'Calibri';
-}
-
-.form .button {
-    width: 80px;
-    height: 30px;
-    border: 1px solid #000;
-    background-color: #294974;
-    color: #000;
-    cursor: pointer;
-}
-
-.form .button:hover {
-    color: #ffffff;
-}
-
-.cont-form .enrg-solar {
-    width: 300px;
-    margin-left: 800px;
-    margin-top: -15px;
-    border-radius: 5px;
-}
-
-.cont-form .enrg-hidr {
-    width: 300px;
-    margin-left: 650px;
-    border-radius: 5px;
-}
-
-
-/* Subs */
-
-
-/*
-    .formulario{
-    height: 503px;
-    background: url(../img/img-subs2.jpg) no-repeat center center/cover;
-    padding: 100px;
-    }
-        
-    .form-subs{
-    width: 400px;
-    background: #fff;
-    padding: 20px;
-    margin: auto;
-    }
-        
-    
-        
-    .form-subs .button{   
-    width: 100%; 
-    height: 30px;
-    border: 1px solid #000;
-    background: #294974;
-    color: #000;
-    cursor: pointer;
-    }
-        
-    .form-subs .button:hover{
-    color: #fff;
-    }
-        
-    .form-subs p{
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    height: auto;
+    border: 2px solid gray;
+    font-size: 25px;
     text-align: center;
-    }
-        
-    .form-subs a p:hover{
-    opacity: .8;
-    color: #0046ff;
-    }
-        
-    .form-subs h4{
-    font-size: 23px;
-    margin-bottom: 20px;
-    text-align: center;
-    }
-    */
-
-
-/*---------------------------------------- intento de comentario ------------------------------------------------*/
-
-
-/*DIV CONTENEDOR DE LOS COMENTARIOS/PUBLICACIONES*/
-
-.cont-publicaciones {
+    background-image: url(../img/fondo-titulo.jpg );
     display: flex;
-    flex-direction: column;
-    height: 96%;
-    width: 60%;
-    margin: 5px;
-    margin-left: 40px;
-    overflow: scroll;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
 }
 
 
-/*COMENTARIO PUBLICACIONES*/
+/*BORDES DE COLORES*/
 
-.cont-publicaciones p {
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    background-color: #294974;
+.adicional {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 4px solid #93ba36;
+    border-bottom: 4px solid #93ba36;
 }
 
 
-/* -------------------------------------------------- Content Info -------------------------------------------------------*/
+/*TITULOS ENTRE SECTIONS (¿QUE SON?)*/
+
+.adicional h3 {
+    font-size: 25px;
+    margin-left: 10px;
+}
 
 
-/* DIV CONTENEDORES INFORMACION*/
+/*PARRAFOS ENTRE SECTIONS */
+
+.adicional p {
+    font-size: 20px;
+    margin: 15px 10px;
+}
+
+
+/*CONTENIDO INFO*/
 
 .cont-info {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -300,74 +177,21 @@ header h1 {
 }
 
 
-/*TITULOS PRINCIPALES*/
-
-.titulo-principal {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    min-height: 320px;
-    border: 2px solid gray;
-    font-size: 60px;
-    text-align: center;
-    text-decoration: underline;
-    background-image: url(../img/fondo-titulo.jpg );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /*BORDES INFERIORES E IZQUIERDOS DE LA LI*/
 
 .cont-info .tam-fuentes {
-    border-left: 4px solid #0079be;
-    border-bottom: 2px solid #0079be;
+    border-left: 4px solid #93ba36;
 }
 
 
-/*TITULOS DE LAS SECCION DE INFORMACION*/
+/*TITULOS DE LAS SECCION DE INFORMACION (¿QUE TIPOS HAY?)*/
 
 .cont-info .tam-fuentes h3 {
     text-align: start;
+    margin-top: 30px;
     margin-bottom: 5px;
     padding: 5px;
-    font-size: 35px;
-}
-
-
-/*PARRAFOS DE LAS SECCION INFORMACION*/
-
-.cont-info .tam-fuentes p {
-    font-size: 20px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-
-/*???????????*/
-
-.tam-fuentes .img-cont {
-    width: 512px;
-    height: 269px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-}
-
-
-/*TITULO LISTA*/
-
-.cont-info .tam-fuentes ul h3 {
-    font-size: 50px;
-    border-bottom: 2px solid #0079be;
-}
-
-
-/*BORDE IZQUIERDO LISTA*/
-
-.cont-info .tam-fuentes ul li {
-    border-bottom: 2px solid #0079be;
+    font-size: 25px;
 }
 
 
@@ -375,7 +199,56 @@ header h1 {
 
 .cont-info .tam-fuentes li h4 {
     font-size: 30px;
+    margin-top: 20px;
     text-align: center;
+}
+
+
+/*-------------------------------------IMAGENES SECCION ENERGIAS--------------------*/
+
+.tam-fuentes .img-cont {
+    width: 350px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin: 10px auto;
+}
+
+#energia-hidro {
+    background-image: url(../img/enrg-hdr-index.png );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    width: 350px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin: 10px auto;
+}
+
+
+/*PARRAFOS DE LAS SECCION INFORMACION (INFORMACION DE LAS NOTICIAS)*/
+
+.cont-info .tam-fuentes p {
+    font-size: 20px;
+    margin: 15px 10px;
+    text-align: justify;
+}
+
+
+/*BORDE LISTA TIPO DE ENERGIAS*/
+
+.cont-info .tam-fuentes h3 {
+    border-bottom: 2px solid #93ba36;
+}
+
+
+/*BORDE INFERIOR LISTA*/
+
+.cont-info .tam-fuentes ul li {
+    border-bottom: 2px solid #93ba36;
 }
 
 
@@ -383,38 +256,59 @@ header h1 {
 
 .resaltado {
     font-style: oblique;
-    color: #0079be;
+    color: #93ba36;
 }
 
 
-/*BORDES ENTRE SECTIONS*/
+/* ----------------------------------------------Tabla-----------------------------------------------------------  */
 
-.adicional {
-    margin-top: 40px;
-    margin-left: 10px;
-    border-left: 4px solid #0079be;
-    border-bottom: 4px solid #0079be;
+.tabla {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #79992f;
+}
+
+th,
+td {
+    padding: 3px;
+    width: 50%;
+}
+
+thead {
+    background-color: #a1cf34;
+    border-bottom: 5px solid #93ba36;
+    color: white;
+}
+
+tr td {
+    background-color: #ddd;
+}
+
+td:hover {
+    background-color: #ffb103;
+    color: white;
+}
+
+section {
+    box-shadow: 5px grey;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonesAdmin {
+    width: 100%;
 }
 
 
-/*PARRAFOS ENTRE SECTIONS*/
-
-.adicional p {
-    font-size: 30px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-
-/*TITULOS ENTRE SECTIONS*/
-
-.adicional h3 {
-    font-size: 50px;
-    margin-left: 10px;
-}
-
-
-/*-------------------------------- FORMULARIO SUBSCRIPCIONES -------------------------------------------------------------------------*/
+/*----------------------------------------------------- FORMULARIO SUBSCRIPCIONES ---------------------------------------------------------*/
 
 
 /*FONDO FORMULARIO*/
@@ -423,7 +317,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     background: url(../img/fondo-formulario.jpg);
-    padding: 50px;
+    padding: 20px;
     color: white;
 }
 
@@ -434,7 +328,7 @@ header h1 {
     display: block;
     border: 2px solid black;
     text-align: start;
-    margin: 100px;
+    margin: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -467,48 +361,21 @@ label {
 }
 
 
-/*-------------------------MAS SOBRE NOSOTROS-----------------*/
-
-ul.letra-grande {
-    display: flex;
-    flex-direction: column;
-}
-
-ul.letra-grande li p {
-    font-size: 20px;
-    margin-bottom: none;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-ul.letra-grande li {
-    height: 100px;
-}
-
-.cont-info {
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-
-
-/* Quienes Somos */
+/*------------------------------------------------ Quienes Somos ----------------------------------------------------*/
 
 .q-Somos {
-    width: 70%;
     margin: auto;
     padding: 32px;
+    padding-left: 10px;
 }
 
 .q-Somos h2 {
     font-size: 27px;
     width: 30%;
     font-family: 'Lato', sans-serif;
-    color: #0079be;
+    color: #93ba36;
     padding-bottom: 15px;
-    border-bottom: 5px solid #0079be;
+    border-bottom: 5px solid #93ba36;
 }
 
 .q-Somos .txt-qs p {
@@ -518,14 +385,14 @@ ul.letra-grande li {
 
 .e-big {
     float: left;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 1;
     margin: 0 5px 0 0;
     text-transform: uppercase;
 }
 
 .pilares {
-    border-left: 5px solid #0079be;
+    border-left: 5px solid #93ba36;
     font-size: 30px;
 }
 
@@ -534,9 +401,9 @@ ul.letra-grande li {
 }
 
 .q-Somos i {
-    color: #17ff00;
-    margin-top: 15px;
-    margin-left: 20px;
+    color: #ffb103;
+    margin-top: 10px;
+    margin-left: 15px;
     cursor: context-menu;
 }
 
@@ -544,48 +411,110 @@ ul.letra-grande li {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     color: #000;
-    border-bottom: 4px solid #0079be;
+    border-bottom: 4px solid #93ba36;
     padding: 13px;
 }
 
 .pilares h4 {
     margin-left: 25px;
-    border-bottom: 4px solid #0079be;
+    border-bottom: 4px solid #93ba36;
 }
 
+.borrar {
+    display: none;
+}
 
-/* Tabla */
+.rojo {
+    color: red;
+}
 
-.tabla {
+footer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    border: 3px solid #0c71c3;
+    justify-content: center;
 }
 
-th,
-td {
-    padding: 3px;
+
+/*-------------------------------------------------------MEDIAQUERIES--------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    header img {
+        width: 150px;
+        margin: 15px 5px;
+        padding-top: 60px;
+    }
+    header h1 {
+        font-size: 80px;
+    }
+    .nav-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .ocultar {
+        display: flex;
+    }
+    #btn-menu {
+        display: none;
+    }
+    .nav-main ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .titulo-principal {
+        font-size: 60px;
+        max-height: 650px;
+        min-height: 320px;
+    }
+    .adicional h3 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+    .adicional p {
+        font-size: 30px;
+        margin: 15px 10px;
+    }
+    .formulario-subs {
+        padding: 60px;
+    }
+    .tabla {
+        width: 80%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex {
+        display: flex;
+    }
+    .flex input {
+        width: 50%;
+    }
+    .flex button {
+        width: 33%;
+    }
+    .nav-main ul li a {
+        border: none;
+    }
 }
 
-thead {
-    background-color: #00a2ff;
-    border-bottom: 5px solid #0c71c3;
-    color: white;
-}
-
-tr td {
-    background-color: #ddd;
-}
-
-td:hover {
-    background-color: #294974;
-    color: white;
-}
-
-section {
-    box-shadow: 5px grey;
+@media only screen and (min-width: 1199px) {
+    .cont-info .tam-fuentes ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .cont-info .tam-fuentes ul li {
+        border-bottom: none;
+        border: 2px solid #93ba36;
+    }
+    .cont-info .tam-fuentes h3 {
+        font-size: 50px;
+        border: none;
+    }
+    .lista-row {
+        width: 30%;
+    }
 }

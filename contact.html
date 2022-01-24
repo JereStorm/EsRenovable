@@ -1,0 +1,68 @@
+<div class="titulo-principal">
+    <h2>
+        BIENVENIDOS A NUESTRO SITIO DE SUBSCRIPCIONES
+    </h2>
+</div>
+<section class="cont-noticias">
+    <div class="adicional">
+        <h3>
+            Formulario de Registro
+        </h3>
+    </div>
+    <div class="cont-formulario">
+        <form action="">
+            <div class="formulario-subs">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" class="input" type="text" name="apellido" value="" placeholder="Ej: Jeremias Tomas" />
+
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" class="input" type="text" name="apellido" value="" placeholder="Ej: Gonzalez Storm" />
+
+                <label for="documento"> Documento: </label>
+                <input id="documento" class="input" type="number" name="documento" value="" placeholder="Ej: 45678876" />
+
+                <label for="fecha de nacimiento"> Fecha de nacimiento: </label>
+                <input id="fecha-de-nacimiento" class="input" type="date" name="fecha" value="" placeholder="Ej: 15/01/2001" />
+
+                <label for="direccion"> Direccion: </label>
+                <input id="direccion" class="input" type="text" name="direccion" value="" placeholder="Ej: la prida 3454" />
+
+                <label for="situacion laboral"> Situacion Laboral: </label>
+                <select id="situacion-laboral" class="input" name="select-situacion-laboral">
+                        <option value="Tengo trabajo">Tengo trabajo</option>
+                        <option value="No tengo trabajo" selected>No tengo trabajo</option>
+                        <!--SELECTED PREDETERMINADO POR MI-->
+                        <option value="Estoy buscando trabajo">Estoy buscando trabajo</option>
+                    </select>
+
+                <label for="observaciones"> Observaciones: </label>
+                <textarea id="observaciones" class="input" name="comentario" rows="8" cols="40" placeholder="Ej: scjbkajsbckjbv aoidvhbusvuisdvbh oisdhvousvbsdu"></textarea>
+
+
+                <label for="email"> Correo electronico: </label>
+                <input id="email" class="input" type="email" name="correo" value="" placeholder="Juancin48.pt@gmail.com" />
+
+                <label for="contraseña"> Contraseña: </label>
+                <input id="contraseña" class="input" type="password" name="pass" value="" />
+
+
+                <label for="sexo"> Sexo: </label>
+                <select id="sexo" class="input" name="select-sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino" selected>Femenino</option>
+                        <!--SELECTED PREDETERMINADO POR MI-->
+                        <option value="Otros">Otros</option>
+                    </select>
+
+                <p>¿Cual es el resultado de esta suma? <span id="primerN"></span> + <span id="segundoN"></span></p>
+                <input class="input" type="number" id="respuesta-captcha">
+                <p id="verificacion"></p>
+                <input class="input" type="button" value="Verificar" id="btnVerificar">
+
+                <button id="btn-registro" type="button">REGISTRARSE</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+<script src="jss/captcharandom.js"></script>
