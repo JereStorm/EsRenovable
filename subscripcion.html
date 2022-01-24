@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Renovable</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bookshop -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/?logout=1619874633048" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://ar.linkedin.com/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p>+54(11)2264-5621</p>
+        <div class="mail">
+            <a href="#">
+                <i class="fas fa-envelope"></i> consultas@gmail.org.ar
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="img/logopng.png" alt="">
+        </a>
+        <h1>
+            <span class="amarillo"> ES </span> RENOVABLE
+        </h1>
+        <div class="nav-main">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="nosotros.html">
+                        Quienes Somos
+                    </a>
+                    <a href="subscripcion.html" class="subs">
+                        Subscribete
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- Nav -->
+    <div class="site-header">
+        <nav class="nav">
+            <a href="#">Energia Eólica</a>
+            <a href="#">Energia Solar</a>
+            <a href="#">Energia Hidraulica</a>
+        </nav>
+    </div>
+
+
+
+    <div class="titulo-principal">
+        <h2>
+            BIENVENIDOS A NUESTRO SITIO DE SUBSCRIPCIONES
+        </h2>
+    </div>
+    <div class="cont-noticias">
+        <div class="adicional">
+            <h3>
+                Formulario de Registro
+            </h3>
+        </div>
+        <div class="cont-formulario">
+            <form action="">
+                <div class="formulario-subs">
+                    <label for="nombre">Apellido y Nombre </label>
+                    <input class="input" type="text" name="nombre" value="" placeholder="Ej: Gonzalez Storm Jeremias Tomas" />
+
+                    <label for="documento"> Documento: </label>
+                    <input class="input" type="number" name="documento" value="" placeholder="Ej: 45678876" />
+
+                    <label for="fecha de nacimiento"> Fecha de nacimiento: </label>
+                    <input class="input" type="number" name="documento" value="" placeholder="Ej: 1512001" />
+
+                    <label for="direccion"> Direccion: </label>
+                    <input class="input" type="text" name="direccion" value="" placeholder="Ej: la prida 3454" />
+
+                    <label for="situacion laboral"> Situacion Laboral: </label>
+                    <select class="input" name="select-situacion-laboral">
+                        <option value="value1">Tengo trabajo</option>
+                        <option value="value2" selected>No tengo trabajo</option>
+                        <!--SELECTED PREDETERMINADO POR MI-->
+                        <option value="value3">Estoy buscando trabajo</option>
+                    </select>
+
+                    <label for="observaciones"> Observaciones: </label>
+                    <textarea class="input" name="comentario" rows="8" cols="40" placeholder="Ej: scjbkajsbckjbv aoidvhbusvuisdvbh oisdhvousvbsdu"></textarea>
+                    <!--ACA TAMPOCO FUNCIONA EL PLACEHOLDER (YA SOLUCIONANDO NO DEJANDO ESPACIO ENTRE EL TEXT AREA)-->
+
+                    <label for="email"> Correo electronico: </label>
+                    <input class="input" type="email" name="correo" value="" placeholder="Juancin48.pt@gmail.com" />
+
+                    <label for="contraseña"> Contraseña: </label>
+                    <input class="input" type="password" name="pass" value="" />
+                    <!--¿¿ACA PORQUE NO ES RECOMENDABLE USAR EL VALUE?-->
+
+                    <div class="radio-buttons input">
+                        <label for=""> Masculino </label>
+                        <input type="radio" name="sexo" value="masculino" />
+                        <label for=""> Femenino </label>
+                        <input type="radio" name="sexo" value="femenino" />
+                        <label for=""> Otros </label>
+                        <input type="radio" name="sexo" value="otros" />
+                    </div>
+
+                    <p id="pregunta">¿Cuanto es el resultado de esta suma? 2+2</p>
+                    <input class="input" type="number" id="resultado">
+                    <p id="verificacion"></p>
+                    <input class="input" type="button" value="Verificar" id="btnVerificar">
+
+                    <button>REGISTRARSE</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h4>Hecho por Jeremias Tomas Gonzalez Storm y Alexis Allende | Todos los derechos reservados &copy;.</h4>
+    </footer>
+    <script src="jss/captcha.js"></script>
+</body>
