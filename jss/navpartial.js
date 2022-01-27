@@ -8,7 +8,7 @@ async function load_content(id) {
     console.log("Loading content for {" + id + "}");;
 
     try {
-        let res = await fetch(`https://jerestorm.github.io/${id}.html`);
+        let res = await fetch(`${window.location.origin}/${id}.html`);
         if (res.ok) {
             let html = await res.text();
             container.innerHTML = html;
